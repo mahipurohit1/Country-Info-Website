@@ -28,7 +28,7 @@ function Layout({ children }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <Container
+      {/* <Container
         as="header"
         maxW="100%"
         borderBottomWidth="1px"
@@ -73,10 +73,10 @@ function Layout({ children }) {
             <ColorModeSwitcher />
           </Box>
         </Flex>
-      </Container>
+      </Container> */}
 
       <main>{children}</main>
-      <Container
+      {/* <Container
         as="footer"
         maxW="100%"
         borderTopWidth="1px"
@@ -146,7 +146,7 @@ function Layout({ children }) {
             </Box>
           </Grid>
         </Container>
-      </Container>
+      </Container> */}
     </>
   );
 }

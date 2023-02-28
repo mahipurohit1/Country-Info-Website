@@ -24,7 +24,6 @@ export const orderBy = (countries, value, direction) => {
   return countries;
 };
 export const SortArrow = ({ direction }) => {
-  console.log("init");
   if (direction == null) {
     return <UpDownIcon />;
   }

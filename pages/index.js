@@ -12,10 +12,10 @@ import Search from "../components/Search";
 import SearchFilterButtons from "../components/SearchFilterButtons";
 
 function Home({ countries }) {
+  const [keyword, setKeyword] = useState("");
   const router = useRouter();
   const query = router.query;
-
-  const [keyword, setKeyword] = useState("");
+  console.log(query.region);
 
   useEffect(() => {
     if (query !== undefined && query.region !== undefined) {
@@ -49,7 +49,6 @@ function Home({ countries }) {
   function getRegion(e) {
     e.preventDefault();
     const dataRegion = e.target.getAttribute("data-region").toLowerCase();
-    //setClick(true);
     router.push({
       query: { region: dataRegion },
     });
@@ -124,6 +123,7 @@ export const getStaticProps = async () => {
     props: {
       countries,
     },
+    revalidate: 6000,
   };
 };
 
