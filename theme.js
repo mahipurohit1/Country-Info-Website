@@ -16,7 +16,7 @@ const theme = extendTheme({
     global: (props) => ({
       body: {
         color: mode("#1a202c", "#edf2f7")(props),
-        bg: mode("#edf2f7", "#1a202c")(props),
+        bg: mode("#dfd7f7", "#1a202c")(props),
       },
     }),
   },

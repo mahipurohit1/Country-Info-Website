@@ -6,7 +6,6 @@ import Layout from "../components/layout";
 import Neighbors from "../components/Neighbors";
 import SiteConfig from "../site.config";
 
-import { useColorModeValue as mode } from "@chakra-ui/color-mode";
 import { Center, Container } from "@chakra-ui/react";
 import Search from "../components/Search";
 import SearchFilterButtons from "../components/SearchFilterButtons";
@@ -66,7 +65,8 @@ function Home({ countries }) {
         <Center
           p="80px 0 100px 0"
           fontSize="1.8em"
-          color={mode("gray.900", "gray.50")}
+          // color={mode("gray.900", "gray.50")}
+          color={"#1a035e"}
         >
           {SiteConfig.description}
         </Center>
