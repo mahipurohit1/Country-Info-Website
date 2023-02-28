@@ -1,0 +1,51 @@
+export const REGION = [
+  {
+    title: "All",
+    region: "",
+    color: "",
+    background: "blue.50",
+    colorscheme: "gray",
+  },
+  {
+    title: "Asia",
+    region: "asia",
+    color: "white",
+    background: "blue.100",
+    colorscheme: "red",
+  },
+  {
+    title: "Africa",
+    region: "africa",
+    color: "white",
+    background: "blue.200",
+    colorscheme: "pink",
+  },
+  {
+    title: "Americas",
+    region: "americas",
+    color: "white",
+    background: "blue.300",
+    colorscheme: "purple",
+  },
+  {
+    title: "Europe",
+    region: "europe",
+    color: "white",
+    background: "blue.400",
+    colorscheme: "blue",
+  },
+  {
+    title: "Oceania",
+    region: "oceania",
+    color: "white",
+    background: "blue.500",
+    colorscheme: "teal",
+  },
+  {
+    title: "Polar",
+    region: "polar",
+    color: "white",
+    background: "blue.600",
+    colorscheme: "green",
+  },
+];
