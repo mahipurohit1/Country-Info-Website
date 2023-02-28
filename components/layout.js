@@ -1,21 +1,7 @@
-import { useColorModeValue as mode } from "@chakra-ui/color-mode";
-import {
-  Box,
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  HStack,
-  Spacer,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
 import Head from "next/head";
-import Link from "next/link";
 import { useRouter } from "next/router";
-import Icon from "supercons";
+// import Icon from "supercons";
 import SiteConfig from "../site.config";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
 function Layout({ children }) {
   const router = useRouter();
